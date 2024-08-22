@@ -1,0 +1,2 @@
+-- clipboard
+-- tool: xclip
