@@ -1,28 +1,28 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, JetBrainsMono, Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     border-radius: 0px;
     /*border: 1px solid #05ff5d;*/
 }
 .modules-left {
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid #73ffa4;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.6);
     margin-top: 5px;
     margin-left: 5px
 }
 .modules-right {
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid #73ffa4;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.6);
     margin-top: 5px;
     margin-right: 5px
 }
 .modules-center {
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid #73ffa4;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.6);
     margin-top: 5px;
 }
 window#waybar {
