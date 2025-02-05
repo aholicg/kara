@@ -36,9 +36,14 @@ output * bg /home/grey/.config/sway/mia-4thlayer.png fill
 # Example configuration:
 #
 exec swayidle -w \
-          timeout 600 'swaylock -f -i /home/grey/.config/sway/renge-drinkmilk.jpg -s fill' \
+          timeout 600 'swaylock -f -i /home/grey/.config/sway/background.png -s fill' \
           timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -f -i /home/grey/.config/sway/renge-drinkmilk.jpg -s fill'
+          before-sleep 'swaylock -f -i /home/grey/.config/sway/background.png -s fill' 
+
+#exec swayidle -w \
+#          timeout 600 'swaylock -f --clock --indicator -i /home/grey/.config/sway/background.png -s fill' \
+#          timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+#          before-sleep 'swaylock -f --clock --indicator -i /home/grey/.config/sway/background.png -s fill'
 
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
@@ -74,8 +79,8 @@ exec swayidle -w \
     bindsym $mod+d exec $menu
 
     # screenshot
-    bindsym print exec grim - | wl-copy 
-    bindsym Shift+print exec grim -g "$(slurp)" - | wl-copy
+    bindsym print exec grim - | wl-copy -t image/png
+    bindsym Shift+print exec grim -g "$(slurp)" -t png - | wl-copy -t image/png
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -179,8 +184,8 @@ exec swayidle -w \
     bindsym $mod+minus scratchpad show
 
 # brightness
-    #bindsym XF86MonBrightnessDown exec light -U 1
-    #bindsym XF86MonBrightnessUp exec light -A 1
+    bindsym XF86MonBrightnessDown exec light -U 1
+    bindsym XF86MonBrightnessUp exec light -A 1
 
 # audio
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
