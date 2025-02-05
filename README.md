@@ -1,3 +1,4 @@
 mostly stolen from [loegaire](https://github.com/loegaire) xd
 
-![image](https://github.com/user-attachments/assets/c5914351-e268-4e1e-8fee-94c398c06a61)
+![bilde](https://github.com/user-attachments/assets/81eeb400-95a5-4536-b9c1-dceea43769ad)
+
