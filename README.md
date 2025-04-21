@@ -8,6 +8,8 @@ mostly stolen from [loegaire](https://github.com/loegaire) xd
 
 ![image](https://github.com/user-attachments/assets/527456ec-5222-45c3-96e8-f0f55b5ddd57) 
 
+![bilde](https://github.com/user-attachments/assets/9930d85e-b04d-43c9-9873-559251ad0ca8)
+
 
 
 
