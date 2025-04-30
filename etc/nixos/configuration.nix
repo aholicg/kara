@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./pkgs.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -143,51 +144,7 @@
   # Boot
   boot.loader.grub.device = "nodev";
   boot.kernelModules = [ "iwlwifi" ];
-
-  # Packages   
-
-  environment.systemPackages = [ 
-    pkgs.vim
-    pkgs.firefox
-    pkgs.firefox-wayland
-    pkgs.curl
-    pkgs.htop
-    pkgs.hyprland
-    pkgs.hyprlock
-    pkgs.hypridle 
-    pkgs.kitty
-    pkgs.foot
-    pkgs.pciutils
-    pkgs.waybar
-    pkgs.hyprpaper
-    pkgs.wofi
-    pkgs.neovim
-    pkgs.xdg-utils
-    pkgs.xdg-desktop-portal
-    pkgs.xdg-desktop-portal-wlr
-    pkgs.xdg-desktop-portal-gtk
-    pkgs.xdg-desktop-portal-hyprland
-    pkgs.wlr-randr
-    pkgs.wl-clipboard
-    pkgs.hyprland-protocols
-    pkgs.grim
-    pkgs.slurp
-    pkgs.uwsm
-    pkgs.nwg-look
-    pkgs.fastfetch
-    pkgs.fcitx5
-    pkgs.fcitx5-gtk
-    pkgs.git
-    pkgs.gcc
-    pkgs.adwaita-qt
-    pkgs.adwaita-qt6
-    pkgs.zip
-    pkgs.unzip
-    pkgs.noto-fonts-cjk-sans
-    pkgs.dejavu_fonts
-    pkgs.font-awesome
-  ];
-
+ 
   # hyprland
   programs.hyprland = {
     enable = true;
@@ -220,7 +177,6 @@
   };
 
   # Pipewire
-  #sound.enable = true;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -235,5 +191,19 @@
     pkgs.dejavu_fonts
     pkgs.noto-fonts-cjk-sans
     pkgs.font-awesome
+    pkgs.font-awesome_5
   ];
+
+  # Fcitx5
+  i18n.inputMethod = {
+    enable = true;
+    type = "fcitx5";
+    fcitx5.addons = with pkgs; [ 
+      fcitx5-mozc 
+      fcitx5-gtk
+      libsForQt5.fcitx5-qt
+      kdePackages.fcitx5-qt
+      fcitx5-unikey
+    ];
+  };
 }
