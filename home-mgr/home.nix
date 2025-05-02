@@ -99,8 +99,14 @@
     font.name = "DejaVu Sans Book 11";
     
     theme = {
-      name = "Nordic-darker";
-      package = pkgs.nordic;
+      #name = "Fluent-Dark";
+      #name = "Nordic-darker";
+      #name = "Arc-Dark";
+      name = "Matcha-dark-sea";
+      #package = pkgs.fluent-gtk-theme;
+      #package = pkgs.nordic;
+      #package = pkgs.arc-theme;
+      package = pkgs.matcha-gtk-theme;
     };
 
     iconTheme = {
@@ -109,8 +115,8 @@
     };
 
     cursorTheme = {
-      name = "Nordzy-cursors";
-      package = pkgs.nordzy-cursor-theme;
+      name = "graphite-dark-nord";
+      package = pkgs.graphite-cursors;
     };
 
     gtk3.extraConfig = {
@@ -124,5 +130,12 @@
         gtk-application-prefer-dark-theme=1
       '';
     };
+  };
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.graphite-cursors;
+    name = "graphite-dark-nord";
+    size = 24;
   };
 }
