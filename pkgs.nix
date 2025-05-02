@@ -1,0 +1,61 @@
+{ pkgs, ... }:
+
+{
+  environment.systemPackages = [
+    pkgs.vim
+    pkgs.firefox
+    pkgs.firefox-wayland
+    pkgs.curl
+    pkgs.htop
+    pkgs.hyprland
+    #pkgs.hyprlock
+    #pkgs.hypridle 
+    pkgs.kitty
+    pkgs.foot
+    pkgs.pciutils
+    pkgs.waybar
+    pkgs.hyprpaper
+    pkgs.wofi
+    pkgs.neovim
+    pkgs.xdg-utils
+    pkgs.xdg-desktop-portal
+    pkgs.xdg-desktop-portal-wlr
+    pkgs.xdg-desktop-portal-gtk
+    pkgs.xdg-desktop-portal-hyprland
+    pkgs.wlr-randr
+    pkgs.wl-clipboard
+    pkgs.hyprland-protocols
+    pkgs.grim
+    pkgs.slurp
+    pkgs.uwsm
+    pkgs.fastfetch
+    pkgs.git
+    pkgs.gcc
+    pkgs.zip
+    pkgs.unzip
+    pkgs.pulseaudio
+    pkgs.brightnessctl
+    pkgs.pavucontrol
+    pkgs.jdk8
+    pkgs.chromium
+    pkgs.logmein-hamachi
+    pkgs.bluez
+    pkgs.p7zip
+    pkgs.exiftool
+    pkgs.yara
+    pkgs.tinyxxd
+    pkgs.wireshark
+    pkgs.tshark
+    pkgs.wf-recorder
+    pkgs.tree
+    pkgs.stegseek
+    pkgs.netcat
+    pkgs.sonic-visualiser
+    pkgs.sleuthkit
+    pkgs.ntfs3g
+    pkgs.binwalk
+    pkgs.bombardier
+    pkgs.file
+    pkgs.jre8
+  ];
+}
