@@ -114,10 +114,10 @@
       package = pkgs.nordzy-icon-theme;
     };
 
-    cursorTheme = {
-      name = "graphite-dark-nord";
-      package = pkgs.graphite-cursors;
-    };
+    #cursorTheme = {
+    #  name = "graphite-dark-nord";
+    #  package = pkgs.graphite-cursors;
+    #};
 
     gtk3.extraConfig = {
       Settings = ''
