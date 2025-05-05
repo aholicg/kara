@@ -228,23 +228,6 @@
   nixpkgs.config.allowUnfree = true;
   #services.logmein-hamachi.enable = true;
 
-  # networking
-  #networking = {
-  #  hostName = "greynixos";
-  #  useDHCP = false;
-  #  interfaces.enp7s0 = {
-  #    useDHCP = true;
-  #    ipv4.addresses = [ {
-  #      address = "192.168.0.108";
-  #      prefixLength = 24;
-  #    } ];
-  #  };
-  #  defaultGateway = "192.168.0.1";
-  #  nameservers = [ "1.1.1.1" "8.8.8.8" ];
-  #  #enableIPv6 = false;
-  #  dhcpcd.extraConfig = "nohook resolv.conf";
-  #};
-
   # Power Management
   powerManagement = {
     enable = true;
@@ -290,5 +273,12 @@
   services.logind.lidSwitch = "suspend";
   services.logind.lidSwitchExternalPower = "suspend";
   services.logind.lidSwitchDocked = "ignore";
+
+  security.sudo = {
+  enable = true;
+  extraConfig = ''
+    Defaults timestamp_timeout=0
+  '';
+  };
 
 }
