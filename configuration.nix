@@ -281,4 +281,14 @@
   '';
   };
 
+  # Docker
+  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+  virtualisation.docker.daemon.settings = {
+    data-root = "/some-place/to-store-the-docker-data";
+  };
+
 }
