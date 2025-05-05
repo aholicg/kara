@@ -58,5 +58,6 @@
     pkgs.file
     pkgs.jre8
     pkgs.upower
+    pkgs.dmidecode
   ];
 }

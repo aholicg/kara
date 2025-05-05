@@ -127,6 +127,7 @@
   #########################
   # hardware
   hardware.firmware = [ pkgs.linux-firmware ];
+  hardware.enableAllFirmware = true;
 
   # Keyboard layout ^-^
   services.xserver.xkb.layout = "us";
@@ -193,7 +194,13 @@
   };
 
   # bluetooth
-  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    settings.general = {
+      enable = "Source,Sink,Media,Socket";
+    };
+  };
 
   # Fonts
   fonts.packages = [	
@@ -239,7 +246,11 @@
   #};
 
   # Power Management
-  powerManagement.enable = true;
+  powerManagement = {
+    enable = true;
+    powertop.enable = true;
+    cpuFreqGovernor = "powersave";
+  };
   services.thermald.enable = true;
   services.power-profiles-daemon.enable = false;
 
@@ -256,6 +267,9 @@
       CPU_MAX_PERF_ON_AC = 100;
       CPU_MIN_PERF_ON_BAT = 0;
       CPU_MAX_PERF_ON_BAT = 20;
+      
+      CPU_BOOST_ON_BAT = 0;
+      CPU_HWP_DYN_BOOST_ON_BAT = 0;
 
       STOP_CHARGE_THRESH_BAT0 = 1; 
     };
@@ -272,8 +286,6 @@
       turbo = "auto";
     };
   };
-
-  powerManagement.powertop.enable = true;
 
   services.logind.lidSwitch = "suspend";
   services.logind.lidSwitchExternalPower = "suspend";
