@@ -57,5 +57,6 @@
     pkgs.bombardier
     pkgs.file
     pkgs.jre8
+    pkgs.upower
   ];
 }
