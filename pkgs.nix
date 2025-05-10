@@ -59,5 +59,16 @@
     pkgs.jre8
     pkgs.upower
     pkgs.dmidecode
+    pkgs.volatility3
+    pkgs.evtx
+    pkgs.hashcat
+    pkgs.ghidra
+    pkgs.elf-info
+    pkgs.foremost
+    pkgs.pipx
+    pkgs.ffmpeg
+    pkgs.audacity
+    pkgs.id3v2
+    pkgs.gdb
   ];
 }

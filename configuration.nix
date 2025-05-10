@@ -288,7 +288,7 @@
     setSocketVariable = true;
   };
   virtualisation.docker.daemon.settings = {
-    data-root = "/some-place/to-store-the-docker-data";
+    data-root = "/home/grey/docker/";
   };
 
 }
