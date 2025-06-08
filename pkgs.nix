@@ -8,8 +8,6 @@
     pkgs.curl
     pkgs.htop
     pkgs.hyprland
-    #pkgs.hyprlock
-    #pkgs.hypridle 
     pkgs.kitty
     pkgs.foot
     pkgs.pciutils
@@ -36,7 +34,6 @@
     pkgs.pulseaudio
     pkgs.brightnessctl
     pkgs.pavucontrol
-    pkgs.jdk8
     pkgs.chromium
     pkgs.logmein-hamachi
     pkgs.bluez
@@ -56,7 +53,6 @@
     pkgs.binwalk
     pkgs.bombardier
     pkgs.file
-    pkgs.jre8
     pkgs.upower
     pkgs.dmidecode
     pkgs.volatility3
@@ -65,10 +61,38 @@
     pkgs.ghidra
     pkgs.elf-info
     pkgs.foremost
-    pkgs.pipx
     pkgs.ffmpeg
     pkgs.audacity
     pkgs.id3v2
     pkgs.gdb
+    pkgs.ghex
+    pkgs.sox
+    pkgs.powertop
+    pkgs.inspectrum
+    pkgs.qsstv
+    pkgs.steam-run
+    pkgs.csvkit
+    pkgs.saleae-logic-2
+    pkgs.vscodium
+    pkgs.pev
+    pkgs.xortool
+    pkgs.vimPlugins.clangd_extensions-nvim
+    pkgs.clang-tools
+    pkgs.gnumake
+    pkgs.gnupg
+    pkgs.zsteg
+    pkgs.pgpdump
+    pkgs.pdf-parser
+    pkgs.steghide
+    pkgs.bento4
+    pkgs.john
+    pkgs.fcrackzip
+    pkgs.libreoffice
+    pkgs.oletools
+    pkgs.bkcrack
+    pkgs.gerbv
+    pkgs.kicad
+    pkgs.wireguard-tools
+    pkgs.flameshot
   ];
 }
