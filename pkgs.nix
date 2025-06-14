@@ -70,10 +70,8 @@
     pkgs.powertop
     pkgs.inspectrum
     pkgs.qsstv
-    pkgs.steam-run
     pkgs.csvkit
     pkgs.saleae-logic-2
-    pkgs.vscodium
     pkgs.pev
     pkgs.xortool
     pkgs.vimPlugins.clangd_extensions-nvim
@@ -87,12 +85,11 @@
     pkgs.bento4
     pkgs.john
     pkgs.fcrackzip
-    pkgs.libreoffice
     pkgs.oletools
     pkgs.bkcrack
-    pkgs.gerbv
-    pkgs.kicad
     pkgs.wireguard-tools
     pkgs.flameshot
+    pkgs.tulip
+    pkgs.nix-tree
   ];
 }
