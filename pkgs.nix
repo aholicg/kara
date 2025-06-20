@@ -91,5 +91,7 @@
     pkgs.flameshot
     pkgs.tulip
     pkgs.nix-tree
+    pkgs.osu-lazer-bin
+    pkgs.desktop-file-utils
   ];
 }
